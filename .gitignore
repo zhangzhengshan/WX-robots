@@ -1,0 +1,60 @@
+# ============================================================================
+# MuMu WeChat Bot - root .gitignore
+# ============================================================================
+
+# ---- Secrets (CRITICAL) ----
+bot/config.properties
+docs/pem/private_key.pem
+
+# ---- Bundled runtime ----
+runtime/jre/
+
+# ---- Compiled / build output ----
+**/out/
+**/*.class
+
+# ---- Runtime-generated data ----
+bot/data/bot.db
+bot/data/bot.db-shm
+bot/data/bot.db-wal
+bot/data/screenshots/
+bot/data/media/
+bot/data/runtime.properties
+bot/data/mail.properties
+bot/data/heartbeat
+bot/data/mumu_events.log
+bot/data/tunnel_events.log
+bot/data/watchdog_throttle.json
+bot/data/list_page.xml
+bot/data/config_audit.log
+bot/data/circuit_breaker
+
+# ---- Logs ----
+bot/logs/
+logs/
+
+# ---- SDK build artefacts ----
+java_sdk/WeWorkFinanceSdk/bin/
+java_sdk/WeWorkFinanceSdk/test.db
+java_sdk/WeWorkFinanceSdk/.classpath
+java_sdk/WeWorkFinanceSdk/.project
+java_sdk/WeWorkFinanceSdk/.settings/
+
+# ---- IDE / editor ----
+.trae/
+.vscode/
+.idea/
+*.iml
+Thumbs.db
+.DS_Store
+
+# ---- Dev scratch ----
+.scratch/
+body.json
+body2.json
+bot/run.log
+bot/run.err.log
+
+# ---- Watchdog debug ----
+watchdog/*.log
+watchdog/*.err

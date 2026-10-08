@@ -1,0 +1,3 @@
+# bot/.gitignore - supplemental to root
+out/
+config.properties
